@@ -25,7 +25,7 @@ document.querySelectorAll('.carousel.slide').forEach((carousel) => {
 
 function isInViewport(elements) {
     elements.forEach((element) => {
-        if (element.getBoundingClientRect().top <= window.innerHeight && element.getBoundingClientRect().bottom >= 0) {
+        if (element.getBoundingClientRect().top <= window.innerHeight && element.getBoundingClientRect().bottom >= document.querySelector('nav').offsetHeight) {
             element.classList.add('visibleElement');
         } else {
             element.classList.remove('visibleElement');
