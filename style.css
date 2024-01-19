@@ -86,6 +86,11 @@ span.carousel-control-prev-icon {
 /* Media queries for viewport */
 
 @media (max-width: 767px) {
+
+    nav {
+        background-color: rgb(33 37 41);
+    }
+
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(50%);
