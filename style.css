@@ -35,11 +35,23 @@ ul.navbar-nav i.fa-bell + span {
     background-color: rgba(128, 128, 128, 0.279);
 }
 
+/* Button "views" */
+
+.btn-views > a {
+    font-size: 0.8em;
+}
+
 /* Card custom */
 
 .card {
     border: none;
     padding: 0 1px;
+    cursor: pointer;
+    transition: scale 1s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
 }
 
 /* Carousel Controls Buttons */

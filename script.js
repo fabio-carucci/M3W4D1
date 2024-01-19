@@ -1,6 +1,20 @@
 // Padding for body related to the navbar height
 
-document.querySelector('body').style.paddingTop = document.querySelector('nav').offsetHeight + "px";
+document.querySelector('body').style.paddingTop = document.querySelector('nav').offsetHeight + 15 + "px";
+
+// Dynamic bg color for navbar
+
+document.addEventListener('scroll', () => {
+    let titleBar = document.querySelector(".title-bar");
+    let nav = document.querySelector('nav');
+    
+    if (titleBar.getBoundingClientRect().top <= nav.offsetHeight) {
+        nav.style.background = "rgb(33 37 41)";
+    } else {
+        nav.style.background = "transparent";
+    }
+});
+
 
 // Multi item carousel
 
