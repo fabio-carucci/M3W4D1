@@ -1,1 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+/* Badge notifications */
+
+ul.navbar-nav i.fa-bell + span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7pt;
+    font-weight: bold;
+    background-color: rgb(229 8 21);
+    color: white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    z-index: 2;
+    top: 2px;
+    right: 0px;
+}
+
+/* Button "genres" */
+
+#btn-genres {
+    border: 1px solid ;
+    border-radius: 0;
+    height: fit-content;
+}
+
+#btn-genres:hover {
+    background-color: rgba(128, 128, 128, 0.279);
+}
+
+/* Card custom */
+
+.card {
+    border: none;
+    padding: 0 1px;
+}
+
+/* Carousel Controls Buttons */
+
+span.carousel-control-next-icon {
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    height: 100%;
+    right: 0px;
+}
+
+
+span.carousel-control-prev-icon {
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    height: 100%;
+    left: 0px;
+}
+
+/* EXTRA animation */
+
+.hiddenElement {
+    opacity: 0;
+    transition: opacity 2s linear;
+}
+
+.visibleElement {
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+/* Media queries for viewport */
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(50%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-50%);
+    }
+
+    ul.navbar-nav i.fa-bell + span {
+        right: 100%;
+        left: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+@media (min-width: 993px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(calc(100%/6));
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(calc(-100%/6));
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
