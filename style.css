@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+nav {
+    background-color: rgb(33 37 41);
+}
+
 /* Badge notifications */
 
 ul.navbar-nav i.fa-bell + span {
@@ -86,10 +90,6 @@ span.carousel-control-prev-icon {
 /* Media queries for viewport */
 
 @media (max-width: 767px) {
-
-    nav {
-        background-color: rgb(33 37 41);
-    }
 
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
