@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Background color of navbar same as dark theme */
+
 nav {
     background-color: rgb(33 37 41);
 }
@@ -87,6 +89,40 @@ span.carousel-control-prev-icon {
     transition: opacity 2s linear;
 }
 
+/* Footer section */
+
+footer {
+    margin: 0 50px;
+    color: grey;
+}
+
+footer > .privacy-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    column-gap: 50px;
+}
+
+footer > .privacy-section > * {
+    width: 120px;
+    font-size: 0.7em;
+    
+}
+
+footer > button {
+    background-color: transparent;
+    border: 1px solid;
+    color: grey;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 0.7em;
+}
+
+footer > button + div {
+    font-size: 0.6em;
+}
+
 /* Media queries for viewport */
 
 @media (max-width: 767px) {
@@ -118,6 +154,11 @@ span.carousel-control-prev-icon {
     .carousel-inner .carousel-item-prev {
       transform: translateX(-25%);
     }
+
+    footer {
+        margin: 0 150px;
+    }
+
 }
 
 @media (min-width: 993px) {
@@ -131,6 +172,11 @@ span.carousel-control-prev-icon {
     .carousel-inner .carousel-item-prev {
       transform: translateX(calc(-100%/6));
     }
+
+    footer {
+        margin: 0 250px;
+    }
+
 }
 
 .carousel-inner .carousel-item-end,
@@ -142,4 +188,12 @@ span.carousel-control-prev-icon {
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
     display: flex;
+}
+
+@media (min-width: 1200px) {
+
+    footer {
+        margin: 0 350px;
+    }
+    
 }
