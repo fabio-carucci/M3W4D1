@@ -5,7 +5,7 @@ document.querySelector('body').style.paddingTop = document.querySelector('nav').
 // Multi item carousel
 
 document.querySelectorAll('.carousel.slide').forEach((carousel) => {
-    let items = document.querySelectorAll('.carousel .carousel-item')
+    let items = carousel.querySelectorAll('.carousel-item')
 
     items.forEach((el) => {
         const minPerSlide = 7;
